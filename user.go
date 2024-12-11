@@ -9,11 +9,11 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/stainless-sdks/bookstore-2-go/internal/apijson"
-	"github.com/stainless-sdks/bookstore-2-go/internal/apiquery"
-	"github.com/stainless-sdks/bookstore-2-go/internal/param"
-	"github.com/stainless-sdks/bookstore-2-go/internal/requestconfig"
-	"github.com/stainless-sdks/bookstore-2-go/option"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/internal/apijson"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/internal/apiquery"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/internal/param"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/internal/requestconfig"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/option"
 )
 
 // UserService contains methods and other services that help with interacting with

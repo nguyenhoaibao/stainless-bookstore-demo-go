@@ -3,7 +3,7 @@
 package bookstore2
 
 import (
-	"github.com/stainless-sdks/bookstore-2-go/internal/apijson"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/internal/apijson"
 )
 
 type EchoParams struct {
