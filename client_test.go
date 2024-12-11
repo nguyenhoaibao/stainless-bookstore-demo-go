@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/bookstore-2-go"
-	"github.com/stainless-sdks/bookstore-2-go/internal"
-	"github.com/stainless-sdks/bookstore-2-go/option"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/internal"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/option"
 )
 
 type closureTransport struct {
