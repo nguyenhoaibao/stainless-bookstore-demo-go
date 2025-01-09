@@ -1,6 +1,6 @@
 # Bookstore 2 Go API Library
 
-<a href="https://pkg.go.dev/github.com/stainless-sdks/bookstore-2-go"><img src="https://pkg.go.dev/badge/github.com/stainless-sdks/bookstore-2-go.svg" alt="Go Reference"></a>
+<a href="https://pkg.go.dev/github.com/nguyenhoaibao/stainless-bookstore-demo-go"><img src="https://pkg.go.dev/badge/github.com/nguyenhoaibao/stainless-bookstore-demo-go.svg" alt="Go Reference"></a>
 
 The Bookstore 2 Go library provides convenient access to [the Bookstore 2 REST
 API](http://example.com/contact) from applications written in Go. The full API of this library can be found in [api.md](api.md).
@@ -9,17 +9,25 @@ It is generated with [Stainless](https://www.stainlessapi.com/).
 
 ## Installation
 
+<!-- x-release-please-start-version -->
+
 ```go
 import (
-	"github.com/stainless-sdks/bookstore-2-go" // imported as bookstore2
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go" // imported as bookstore2
 )
 ```
 
+<!-- x-release-please-end -->
+
 Or to pin the version:
 
+<!-- x-release-please-start-version -->
+
 ```sh
-go get -u 'github.com/stainless-sdks/bookstore-2-go@v0.0.1-alpha.0'
+go get -u 'github.com/nguyenhoaibao/stainless-bookstore-demo-go@v0.0.1-alpha.1'
 ```
+
+<!-- x-release-please-end -->
 
 ## Requirements
 
@@ -35,8 +43,8 @@ package main
 import (
 	"context"
 
-	"github.com/stainless-sdks/bookstore-2-go"
-	"github.com/stainless-sdks/bookstore-2-go/option"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/option"
 )
 
 func main() {
@@ -101,7 +109,7 @@ if res.Name == "" {
 	// true if `"name"` is either not present or explicitly null
 	res.JSON.Name.IsNull()
 
-	// true if the `"name"` key was not present in the repsonse JSON at all
+	// true if the `"name"` key was not present in the response JSON at all
 	res.JSON.Name.IsMissing()
 
 	// When the API returns data that cannot be coerced to the expected type:
@@ -148,7 +156,7 @@ client.Echo(context.TODO(), ...,
 )
 ```
 
-See the [full list of request options](https://pkg.go.dev/github.com/stainless-sdks/bookstore-2-go/option).
+See the [full list of request options](https://pkg.go.dev/github.com/nguyenhoaibao/stainless-bookstore-demo-go/option).
 
 ### Pagination
 
@@ -333,12 +341,12 @@ middleware has been applied.
 
 This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) conventions, though certain backwards-incompatible changes may be released as minor versions:
 
-1. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals)_.
+1. Changes to library internals which are technically public but not intended or documented for external use. _(Please open a GitHub issue to let us know if you are relying on such internals.)_
 2. Changes that we do not expect to impact the vast majority of users in practice.
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/bookstore-2-go/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/nguyenhoaibao/stainless-bookstore-demo-go/issues) with questions, bugs, or suggestions.
 
 ## Contributing
 

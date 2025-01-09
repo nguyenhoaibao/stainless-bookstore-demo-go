@@ -41,7 +41,7 @@ To use a local version of this library from source in another project, edit the 
 directive. This can be done through the CLI with the following:
 
 ```sh
-$ go mod edit -replace github.com/stainless-sdks/bookstore-2-go=/path/to/bookstore-2-go
+$ go mod edit -replace github.com/nguyenhoaibao/stainless-bookstore-demo-go=/path/to/stainless-bookstore-demo-go
 ```
 
 ## Running tests
