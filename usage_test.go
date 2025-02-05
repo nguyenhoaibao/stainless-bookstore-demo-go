@@ -26,10 +26,11 @@ func TestUsage(t *testing.T) {
 		option.WithUsername("My Username"),
 		option.WithPassword("My Password"),
 	)
-	_, err := client.Echo(context.TODO(), bookstore2.EchoParams{
+	response, err := client.Echo(context.TODO(), bookstore2.EchoParams{
 		Body: "Hello world!",
 	})
 	if err != nil {
 		t.Error(err)
 	}
+	t.Logf("%+v\n", response)
 }
