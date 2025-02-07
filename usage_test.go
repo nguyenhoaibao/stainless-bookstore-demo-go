@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stainless-sdks/bookstore-2-go"
-	"github.com/stainless-sdks/bookstore-2-go/internal/testutil"
-	"github.com/stainless-sdks/bookstore-2-go/option"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/internal/testutil"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/option"
 )
 
 func TestUsage(t *testing.T) {
@@ -26,10 +26,11 @@ func TestUsage(t *testing.T) {
 		option.WithUsername("My Username"),
 		option.WithPassword("My Password"),
 	)
-	_, err := client.Echo(context.TODO(), bookstore2.EchoParams{
+	response, err := client.Echo(context.TODO(), bookstore2.EchoParams{
 		Body: "Hello world!",
 	})
 	if err != nil {
 		t.Error(err)
 	}
+	t.Logf("%+v\n", response)
 }

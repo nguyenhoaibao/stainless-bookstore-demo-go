@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/stainless-sdks/bookstore-2-go/internal/requestconfig"
-	"github.com/stainless-sdks/bookstore-2-go/option"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/internal/requestconfig"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/option"
 )
 
 // Client creates a struct with services and top level methods that help with

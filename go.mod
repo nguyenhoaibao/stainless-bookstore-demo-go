@@ -1,4 +1,4 @@
-module github.com/stainless-sdks/bookstore-2-go
+module github.com/nguyenhoaibao/stainless-bookstore-demo-go
 
 go 1.21
 

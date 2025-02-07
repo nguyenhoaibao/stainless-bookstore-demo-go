@@ -12,7 +12,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/stainless-sdks/bookstore-2-go/internal/requestconfig"
+	"github.com/nguyenhoaibao/stainless-bookstore-demo-go/internal/requestconfig"
 	"github.com/tidwall/sjson"
 )
 
@@ -20,7 +20,7 @@ import (
 // which can be supplied to clients, services, and methods. You can read more about this functional
 // options pattern in our [README].
 //
-// [README]: https://pkg.go.dev/github.com/stainless-sdks/bookstore-2-go#readme-requestoptions
+// [README]: https://pkg.go.dev/github.com/nguyenhoaibao/stainless-bookstore-demo-go#readme-requestoptions
 type RequestOption = func(*requestconfig.RequestConfig) error
 
 // WithBaseURL returns a RequestOption that sets the BaseURL for the client.
